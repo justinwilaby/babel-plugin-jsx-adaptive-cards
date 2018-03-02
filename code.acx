@@ -1,0 +1,16 @@
+export class AdaptiveCardComponent {
+  render() {
+    return (
+      <card>
+        <body>
+        <text size="medium" weight="bolder">My First ACX card!</text>
+        </body>
+        <actions>
+          <action type="submit">
+            Hi there!
+          </action>
+        </actions>
+      </card>
+    )
+  }
+}

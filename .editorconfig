@@ -1,0 +1,17 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+quote_type = single
+
+# Tab indentation
+[*.{js,ts,jsx,tsx,acx,json}]
+indent_style = space
+indent_size = 2
+
+# Space indentation
+[package.json]
+indent_style = space
+indent_size = 2
