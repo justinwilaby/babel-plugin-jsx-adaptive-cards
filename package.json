@@ -1,10 +1,12 @@
 {
   "name": "babel-plugin-jsx-adaptive-cards",
   "repository": "https://github.com/justinwilaby/babel-plugin-jsx-adaptive-cards",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Babel plugin to transpile JSX to Adaptive Cards",
   "main": "./lib/index.js",
-  "files":["/lib"],
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "test": "cd examples && webpack && cd test && mocha"
   },
