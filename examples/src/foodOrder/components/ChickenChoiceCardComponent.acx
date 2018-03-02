@@ -1,0 +1,39 @@
+export class ChickenChoiceCardComponent {
+
+  constructor(props) {
+    this.props = props;
+  }
+
+  render() {
+    return (
+      <card>
+        <body>
+          <text wrap={true} size="medium">Do you have any allergies?</text>
+          <input type="choiceSet" id="ChickenAllergy" style="expanded" isMultiSelect={true}>
+            <choice value="peanut">I'm allergic to peanuts</choice>
+          </input>
+          <input type="text" isMultiline={true} id="ChickenOther" placeholder="Any other preparation requests?"/>
+        </body>
+        <actions>
+          <action type="submit">
+            {{FoodChoice: "Chicken"}}
+          </action>
+          <action type="showCard" title="Tofu (Vegetarian)">
+            <card>
+              <body>
+                <text wrap={true} size="medium">Would you like it prepared vegan?</text>
+                <input type="toggle" id="Vegetarian" title="Please prepare it vegan" valueOn="vegan" valueOff="nonVegan"/>
+                <input type="text" id="VegOther" isMultiline={true} placeholder="Any other preparation requests?"/>
+              </body>
+              <actions>
+                <action type="submit" title="Ok">
+                  {{FoodChoice: "Vegetarian"}}
+                </action>
+              </actions>
+            </card>
+          </action>
+        </actions>
+      </card>
+    )
+  }
+}

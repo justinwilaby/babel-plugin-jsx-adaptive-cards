@@ -1,0 +1,27 @@
+export class StockStatsComponent {
+  render() {
+    return (
+      <container spacing="none">
+        <columns>
+          <column width="stretch">
+            <text size="extraLarge">75.30</text>
+            <text size="small" spacing="none" color="attention">▼ 0.20 (0.32%)</text>
+          </column>
+          <column width="auto">
+            <facts>
+              {...this.dailyStats}
+            </facts>
+          </column>
+        </columns>
+      </container>
+    )
+  }
+
+  get dailyStats() {
+    return [
+      {title: 'Open', value: '62.24'},
+      {title: 'High', value: '62.80'},
+      {title: 'Low', value: '62.20'}
+    ].map(attrs => <fact {...attrs}/>);
+  }
+}

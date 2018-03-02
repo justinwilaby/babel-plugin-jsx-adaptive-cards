@@ -1,0 +1,34 @@
+import {SteakChoiceCardComponent} from './components/SteakChoiceCardComponent';
+import {ChickenChoiceCardComponent} from './components/ChickenChoiceCardComponent.acx';
+
+export class FoodOrder {
+  render() {
+    return (
+      <card>
+        <body>
+        <text size="medium" weight="bolder">Your registration is almost complete</text>
+        <text wrap={true}>What type of food do you prefer?</text>
+        <images imageSize="medium">
+          {...this.getImages()}
+        </images>
+        </body>
+        <actions>
+          <action type="showCard" title="Steak">
+            <SteakChoiceCardComponent>
+              <choice value="rare">Rare</choice>
+              <choice value="medium-rare">Medium Rare</choice>
+              <choice value="well-done">Well Done</choice>
+            </SteakChoiceCardComponent>
+          </action>
+          <action type="showCard" title="Chicken">
+            <ChickenChoiceCardComponent/>
+          </action>
+        </actions>
+      </card>
+    )
+  }
+
+  getImages() {
+    return 'steak chicken tofu'.split(' ').map(name => <image url={`http://contososcubabot.azurewebsites.net/assets/${name}.jpg`}/>);
+  }
+}

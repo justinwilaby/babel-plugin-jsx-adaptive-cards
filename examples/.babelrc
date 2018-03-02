@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": "> 1%"
+      },
+      "modules": "umd"
+    }]
+  ],
+  "plugins": ["babel-plugin-jsx-adaptive-cards", "@babel/plugin-syntax-jsx"],
+  "overrides": [{
+    "test": "*.acx",
+    "plugins": [
+      "babel-plugin-jsx-adaptive-cards"
+    ]
+  }],
+  "ignore": [
+    "node_modules/**/"
+  ]
+}

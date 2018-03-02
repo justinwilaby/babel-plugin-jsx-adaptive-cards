@@ -1,0 +1,17 @@
+import {StockStatsComponent} from './components/stockStatsComponent.acx';
+
+export class StockUpdateComponent {
+  render() {
+    return (
+      <card>
+        <body>
+        <container>
+          <text size="medium" isSubtle={true}>Microsoft Corp (NASDAQ: MSFT)</text>
+          <text isSubtle={true}>{new Date().toUTCString()}</text>
+        </container>
+        <StockStatsComponent/>
+        </body>
+      </card>
+    )
+  }
+}

@@ -1,0 +1,23 @@
+export class SteakChoiceCardComponent {
+  constructor(props) {
+    this.props = props;
+  }
+  render() {
+    return (
+      <card>
+        <body>
+        <text size="medium" wrap={true}>How would you like your steak prepared?</text>
+        <input type="choiceSet">
+          {...this.props.children}
+        </input>
+        <input type="text" id="SteakOther" isMultiline={true} placeholder="Any other preparation requests?"/>
+        </body>
+        <actions>
+          <action type="submit" title="OK">
+            {{FoodChoice: 'Steak'}}
+          </action>
+        </actions>
+      </card>
+    );
+  }
+}

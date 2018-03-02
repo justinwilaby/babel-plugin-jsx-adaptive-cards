@@ -1,0 +1,14 @@
+export class CommentCardComponent{
+  render() {
+    return (
+      <card>
+        <body>
+        <input type="text" placeholder="enter comment" style="text" maxLength={0} id="CommentVal"/>
+        </body>
+        <actions>
+          <action type="submit" title="ok"/>
+        </actions>
+      </card>
+    );
+  }
+}
