@@ -1,7 +1,7 @@
 # JSX For Adaptive Cards (ACX)
 The Babel plugin for JSX [Adaptive Cards](http://adaptivecards.io/) allows you to use the familiar JSX syntax for authoring 
-your cards while leveraging the entire JavaScript language for organizing and generating cards while notifying you at build time of 
-schema validation errors.
+your cards while leveraging the entire JavaScript language for organizing and generating cards. Build time notifications 
+of schema errors are output to the console with a pointer to the exact line that caused the error.
 
 Similar to [React JSX](https://reactjs.org/docs/introducing-jsx.html), JSX for Adaptive Cards allows authoring of cards using declarative 
 elements, components and expressions. It is then transpiled in to pure JavaScript to render valid Adaptive Card JSON. This plugin is compatible 
@@ -45,7 +45,7 @@ This is the root of your Adaptive Card
   <actions></actions>
 </card>
 ```
-###[TextBlock](https://docs.microsoft.com/en-us/adaptive-cards/create/cardschema#textblock)
+### [TextBlock](https://docs.microsoft.com/en-us/adaptive-cards/create/cardschema#textblock)
 The child text node maps to the `text` property.
 ```jsx harmony
 <text>Polar bears have a conservation status of "Vulnerable"</text>
