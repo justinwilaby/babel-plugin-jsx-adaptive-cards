@@ -3,7 +3,7 @@ export class AdaptiveCardComponent {
     return (
       <card>
         <body>
-        <text size="medium" weight="bolder">My First ACX card!</text>
+        <text size="medium" horizontalAlignment="center" weight="bolder">My First ACX card!</text>
         </body>
         <actions>
           <action type="submit">
