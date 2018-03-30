@@ -1,9 +1,9 @@
 export class RestaurantComponent {
   render() {
     return (
-      <card>
+      <card speak="Tom's Pie is a Pizza restaurant which is rated 9.3 by customers.">
         <body>
-        <columns speak="Tom's Pie is a Pizza restaurant which is rated 9.3 by customers.">
+        <columns>
           <column width="2">
             <text>PIZZA</text>
             <text weight="bolder" size="extraLarge" spacing="none">Tom's Pie</text>

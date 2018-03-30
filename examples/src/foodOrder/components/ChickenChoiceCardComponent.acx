@@ -15,7 +15,7 @@ export class ChickenChoiceCardComponent {
           <input type="text" isMultiline={true} id="ChickenOther" placeholder="Any other preparation requests?"/>
         </body>
         <actions>
-          <action type="submit">
+          <action type="submit" title="OK">
             {{FoodChoice: "Chicken"}}
           </action>
           <action type="showCard" title="Tofu (Vegetarian)">
