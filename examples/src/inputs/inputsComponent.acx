@@ -1,4 +1,4 @@
-import {ChoicesComponent} from './components/choicesComonent.acx';
+import {ChoicesComponent} from './components/choicesComponent.acx';
 import {CommentCardComponent} from './components/CommentCardComponent.acx';
 
 export class InputsComponent {

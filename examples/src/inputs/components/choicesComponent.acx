@@ -1,9 +1,9 @@
 export const ChoicesComponent = (props) => {
     return (
-      <input type="choiceSet" {...props}>
+      <choices {...props}>
         <choice value="1">Red</choice>
         <choice value="2">Green</choice>
         <choice value="3">Blue</choice>
-      </input>
+      </choices>
     )
 };

@@ -9,9 +9,9 @@ export class ChickenChoiceCardComponent {
       <card>
         <body>
           <text wrap={true} size="medium">Do you have any allergies?</text>
-          <input type="choiceSet" id="ChickenAllergy" style="expanded" isMultiSelect={true}>
+          <choices id="ChickenAllergy" style="expanded" isMultiSelect={true}>
             <choice value="peanut">I'm allergic to peanuts</choice>
-          </input>
+          </choices>
           <input type="text" isMultiline={true} id="ChickenOther" placeholder="Any other preparation requests?"/>
         </body>
         <actions>

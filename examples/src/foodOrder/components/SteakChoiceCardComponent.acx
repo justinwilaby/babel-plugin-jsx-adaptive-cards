@@ -7,9 +7,9 @@ export class SteakChoiceCardComponent {
       <card>
         <body>
         <text size="medium" wrap={true}>How would you like your steak prepared?</text>
-        <input type="choiceSet">
+        <choices>
           {...this.props.children}
-        </input>
+        </choices>
         <input type="text" id="SteakOther" isMultiline={true} placeholder="Any other preparation requests?"/>
         </body>
         <actions>
