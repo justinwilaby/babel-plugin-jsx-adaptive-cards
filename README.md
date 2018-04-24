@@ -149,11 +149,11 @@ There must be a single child which is the `<card>` element to show
 ### [Input.ChoiceSet](https://docs.microsoft.com/en-us/adaptive-cards/create/cardschema#inputchoiceset)
 Children map to the `choices` property and must be `<choice>` elements
 ```jsx harmony
-<input type="choiceSet" id="uniqueId">
+<choices id="uniqueId">
   <choice value="1">Polar Bears International</choice>
   <choice value="2">Humane Society International</choice>
   ...
-</input>
+</choices>
 ```
 ### [Input.Choice](https://docs.microsoft.com/en-us/adaptive-cards/create/cardschema#inputchoice)
 The child text node maps to the `title` property
